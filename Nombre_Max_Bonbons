@@ -1,0 +1,14 @@
+Debut nombreMaxBonbons (reel argent, reel prix)
+  argent <- Lire Reel
+  prix <- Lire Reel
+  nbBonbons = 0
+  Si argent > 0 et prix > 0
+    Tant que argent > prix
+      argent <- argent - prix
+      nbBonbons <- nbBonbons + 1
+    Ecrire nbBonbons
+    Fin Tant que
+  Sinon
+    Ecrire "Merci de donner un nombre positif"
+  Fin Si
+Fin nombreMaxBonbons
